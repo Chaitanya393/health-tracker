@@ -12,7 +12,7 @@ A web application to track and visualize workout progress for multiple users. Bu
 
 ## Live Demo
 
-[Check out the live demo here](https://health-tracker-demo.netlify.app)
+[Check out the live demo here](https://health-tracker-chaitanya.netlify.app)
 
 ## Tech Stack
 
@@ -33,7 +33,7 @@ Before you begin, ensure you have the following installed:
 
 1. Clone the repository
 ```bash
-git clone https://github.com/[your-username]/health-tracker.git
+git clone https://github.com/Chaitanya393/health-tracker.git
 cd health-tracker
 ```
 
