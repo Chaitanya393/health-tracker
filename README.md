@@ -4,15 +4,15 @@ A web application to track and visualize workout progress for multiple users. Bu
 
 ## Features
 
-- 📊 Track multiple users' workout progress
-- 🏃‍♂️ Support for different workout types (Running, Swimming, Yoga, etc.)
-- 📈 Visual progress charts
-- 🔍 Search and filter functionality
-- 📱 Responsive design for all devices
+-  Track multiple users' workout progress
+-  Support for different workout types (Running, Swimming, Yoga, etc.)
+-  Visual progress charts
+-  Search and filter functionality
+-  Responsive design for all devices
 
 ## Live Demo
 
-[Check out the live demo here](https://health-tracker-chaitanya393.netlify.app)
+[Check out the live demo here](https://healthtrackers.netlify.app/)
 
 ## Tech Stack
 
