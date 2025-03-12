@@ -1,0 +1,32 @@
+<div class="min-h-screen bg-gray-50">
+
+
+  <div class="max-w-7xl mx-auto px-4 py-6">
+    <mat-tab-group animationDuration="300ms" class="bg-white rounded-xl shadow-md">
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <mat-icon class="mr-2">fitness_center</mat-icon>
+          Users Workout List
+        </ng-template>
+        <div class="p-6">
+          <app-add-user
+            (userAdded)="usersComponent.loadUsers(); progressChartComponent.loadUsers()"
+            class="block mb-6"></app-add-user>
+          <app-users #usersComponent></app-users>
+        </div>
+      </mat-tab>
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <mat-icon class="mr-2">trending_up</mat-icon>
+          Workout Progress
+        </ng-template>
+        <div class="p-6">
+          <app-add-user
+            (userAdded)="usersComponent.loadUsers(); progressChartComponent.loadUsers()"
+            class="block mb-6"></app-add-user>
+          <app-progress-chart #progressChartComponent></app-progress-chart>
+        </div>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+</div>

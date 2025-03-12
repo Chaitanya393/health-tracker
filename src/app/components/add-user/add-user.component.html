@@ -1,0 +1,115 @@
+
+
+<div class="flex items-center justify-end  h-full">
+  
+  <button
+    class="bg-gradient-to-r from-blue-500 to-blue-700 text-white  px-5 py-3 rounded-lg shadow-lg hover:scale-105 transition-all duration-300 ease-in-out"
+    (click)="openDialog()">
+    Add Workout
+   
+  </button>
+</div>
+
+<ng-template #dialogTemplate>
+  <form
+  class="min-w-[200px] max-w-[500px] w-full border border-gray-300 p-6 rounded-xl bg-white shadow-md transition-all hover:shadow-xl"
+  #form="ngForm"
+  (ngSubmit)="onSubmit(form)">
+
+  <h4 class="text-xl font-bold text-gray-800 mb-4 text-center ">
+    Add Workout Details
+  </h4>
+
+  
+  <div class="mb-5">
+    <label class="block text-sm font-medium text-gray-600 mb-1" for="username">User Name</label>
+    <div class="relative">
+      <input
+        class="w-full border border-gray-300 rounded-lg py-2 pl-10 pr-4 focus:ring-2 focus:ring-blue-400 focus:border-blue-500 transition-all"
+        [(ngModel)]="name"
+        name="name"
+        id="username"
+        required
+        placeholder="Enter your name" />
+      <span class="absolute inset-y-0 left-3 flex items-center text-gray-400">
+        <i class="fas fa-user"></i>
+      </span>
+    </div>
+    <div
+      *ngIf="form.submitted && form.controls['name']?.invalid"
+      class="text-xs text-red-500 mt-1">
+      User Name is required
+    </div>
+  </div>
+
+  
+  <div class="mb-5">
+    <label class="block text-sm font-medium text-gray-600 mb-1" for="workoutType">Workout Type</label>
+    <div class="relative">
+      <select
+        class="w-full border border-gray-300 rounded-lg py-2 pl-10 pr-4 focus:ring-2 focus:ring-blue-400 focus:border-blue-500 transition-all"
+        [(ngModel)]="workoutType"
+        name="workoutType"
+        id="workoutType"
+        aria-label="Select workout type"
+        required>
+        <option value="" disabled selected>Select a workout</option>
+        <option *ngFor="let option of workoutOptions" [value]="option.value">
+          {{ option.viewValue }}
+        </option>
+      </select>
+      <span class="absolute inset-y-0 left-3 flex items-center text-gray-400">
+        <i class="fas fa-dumbbell"></i>
+      </span>
+    </div>
+    <div
+      *ngIf="form.submitted && form.controls['workoutType']?.invalid"
+      class="text-xs text-red-500 mt-1">
+      Workout Type is required
+    </div>
+  </div>
+
+  
+  <div class="mb-5">
+    <label class="block text-sm font-medium text-gray-600 mb-1" for="minutes">Workout Minutes</label>
+    <div class="relative">
+      <input
+      class="w-full border border-gray-300 rounded-lg py-2 pl-10 pr-4 focus:ring-2 focus:ring-blue-400 focus:border-blue-500 transition-all"
+      [(ngModel)]="workoutMinutes"
+        name="workoutMinutes"
+        id="minutes"
+        required
+        type="number"
+        min="1"
+        placeholder="Enter workout duration (mins)" />
+      <span class="absolute inset-y-0 left-3 flex items-center text-gray-400">
+        <i class="fas fa-clock"></i>
+      </span>
+    </div>
+    <div
+      *ngIf="form.submitted && form.controls['workoutMinutes']?.invalid"
+      class="text-xs text-red-500 mt-1">
+      Workout Minutes are required
+    </div>
+  </div>
+
+
+  <div class="flex justify-between mt-6">
+    <button
+      type="button"
+      class="px-4 py-2 text-gray-700 bg-gray-200 rounded-lg hover:bg-gray-300 transition-all"
+      (click)="onCancel()">
+      Cancel
+    </button>
+    <button
+      type="submit"
+      class="px-5 py-2 text-white bg-blue-600 rounded-lg hover:bg-blue-700 flex items-center gap-2 transition-all">
+      <i class="fas fa-save mr-2"></i>
+      Add Workout
+    </button>
+  </div>
+</form>
+
+</ng-template>
+
+
