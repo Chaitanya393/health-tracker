@@ -87,7 +87,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-Chaitanya Tiwari - [chaitanya.tiwari@example.com](mailto:chaitanya.tiwari@example.com)
+Chaitanya Tiwari - chaitanyatiwari2468@gmail.com
 
 Project Link: [https://github.com/Chaitanya393/health-tracker](https://github.com/Chaitanya393/health-tracker)
 
