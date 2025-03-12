@@ -12,7 +12,7 @@ A web application to track and visualize workout progress for multiple users. Bu
 
 ## Live Demo
 
-[Check out the live demo here](https://health-tracker-chaitanya.netlify.app)
+[Check out the live demo here](https://health-tracker-chaitanya393.netlify.app)
 
 ## Tech Stack
 
@@ -87,7 +87,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-Your Name - [your.email@example.com](mailto:your.email@example.com)
+Chaitanya Tiwari - [chaitanya.tiwari@example.com](mailto:chaitanya.tiwari@example.com)
 
-Project Link: [https://github.com/[your-username]/health-tracker](https://github.com/[your-username]/health-tracker)
+Project Link: [https://github.com/Chaitanya393/health-tracker](https://github.com/Chaitanya393/health-tracker)
 
